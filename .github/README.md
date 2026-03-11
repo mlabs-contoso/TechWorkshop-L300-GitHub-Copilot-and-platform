@@ -50,3 +50,5 @@ Go to **Settings → Secrets and variables → Actions → Variables** and add:
 | `AZURE_WEBAPP_NAME`   | Name of the App Service (e.g. `app-zavastore-dev-xyz`)       |
 
 > **Tip:** After running `azd up`, get the actual resource names from the deployment outputs or the Azure portal.
+
+Test
