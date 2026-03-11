@@ -1,0 +1,17 @@
+name: zavastore
+metadata:
+  template: ZavaStorefront@0.0.1
+
+infra:
+  provider: bicep
+  path: ./infra
+  module: main
+
+services:
+  web:
+    project: ./src
+    host: appservice
+    language: dotnet
+    docker:
+      path: ./src/Dockerfile
+      registry: ${AZURE_CONTAINER_REGISTRY_ENDPOINT}
